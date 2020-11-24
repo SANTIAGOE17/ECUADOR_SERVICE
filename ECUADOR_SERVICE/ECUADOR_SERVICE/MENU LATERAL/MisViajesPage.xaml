@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.MisViajesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="" />
+            <Label Text="Ecuador - Tourism Service" TextColor="#333333" FontSize="15" FontAttributes="None" HorizontalOptions="Center" />
+            <Label Text="" />
+            <Label Text="MIS VIAJES" TextColor="Olive" FontSize="18"  WidthRequest="{OnPlatform UWP=300,Android=300,iOS=300}" FontAttributes="None" />
+            <Label Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.Registro"
+             Title="Ecuador - Tourism Service"  >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+            <Grid RowSpacing="25">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+
+               
+                <Label Text=""/>
+                <Label Text="Inscríbete" TextColor="#008B8B" FontSize="18"  WidthRequest="{OnPlatform UWP=300,Android=300,iOS=300}" FontAttributes="Bold" />
+                <Label Text=""/>
+            </StackLayout>
+          
+          
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    
+                    <Entry WidthRequest="275" HeightRequest="50"
+                           Placeholder="Nombre de Usuario" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text"
+                           HorizontalTextAlignment="Start" MaxLength="20"
+                           x:Name="Nombre_Usuario"/>
+                </Frame>
+           
+            </StackLayout>
+            <StackLayout Grid.Row="3" HorizontalOptions="Center">
+
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="275" HeightRequest="50"
+                           Placeholder="Email" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Email"
+                           HorizontalTextAlignment="Start" MaxLength="35"
+                           x:Name="Email"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" HorizontalOptions="Center">
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="275" HeightRequest="50"
+                           Keyboard="Text" Placeholder="Password"  IsPassword="True" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"
+                           HorizontalTextAlignment="Start" MaxLength="20"
+                           x:Name="Password"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Horizontal">
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="134" HeightRequest="50"
+                           Keyboard="Text" Placeholder="Nombre" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"
+                           HorizontalTextAlignment="Start" MaxLength="20"
+                           x:Name="Nombre"/>
+                </Frame>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="134" HeightRequest="50"
+                           Keyboard="Text" Placeholder="Apellido" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"
+                           HorizontalTextAlignment="Start" MaxLength="20"
+                           x:Name="Apellido"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="Center">
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,3,0,0">
+                    <Entry WidthRequest="134" HeightRequest="50"
+                           Keyboard="Numeric" Placeholder="Edad" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"
+                           HorizontalTextAlignment="Start" MaxLength="20"
+                           x:Name="Edad"/>
+
+                </Frame>
+                <Frame HasShadow="True" WidthRequest="134" HeightRequest="50" Padding="0,0,0,0" Margin="{OnPlatform UWP=10}">
+                    <Picker Title="Pais" FontSize="16" WidthRequest="{OnPlatform UWP=146,Android=123,iOS=146}" HorizontalOptions="Center"
+                            x:Name="Pais">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>ARGENTINA</x:String>
+                                <x:String>BOLIVIA</x:String>
+                                <x:String>COLOMBIA</x:String>
+                                <x:String>ECUADOR</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+            </StackLayout>
+            <Label Text=""/>
+            <StackLayout Grid.Row="7" HorizontalOptions="Center" >
+                
+                    <Button x:Name="btn_registrar" Text="Crear Cuenta " HeightRequest="35" TextColor="White" BackgroundColor="#008B8B" FontSize="12" FontAttributes="Bold"
+                            Clicked="btn_registrar_Clicked"/>
+              
+                <Label Text=""/>
+                <Frame Padding="0,4,0,4" HasShadow="True">
+                    <Button   Text="Volver " HeightRequest="35" TextColor="#6B8E23" BackgroundColor="White" FontSize="12" FontAttributes="Bold" 
+                             Clicked="Volver_clicked" />
+
+                </Frame>
+
+                <ActivityIndicator Color="#b4995d"></ActivityIndicator>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

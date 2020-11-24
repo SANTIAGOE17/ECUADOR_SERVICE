@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.MasterPage"
+                   Title="MENU "
+                  MasterBehavior="Popover">
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="#e0f2f1" Title=" Master" IconImageSource="hamburger.png" >
+
+            <ContentPage.Content>
+                <StackLayout Padding="10,12">
+
+                    <Label Text=" Master Page"></Label>
+                    <ListView x:Name="ListaUsuario" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Nombre}" Detail="{Binding Apellido}">
+                                </TextCell>
+                            </DataTemplate>
+                                
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Image Source="ecuador.jpg" WidthRequest="250" HeightRequest="220"></Image>
+
+                    <Button Text="Menu Principal" BackgroundColor="#009668" TextColor="White" Clicked="Button_Clicked"></Button>
+                    <Button Text="MI Cuenta" BackgroundColor="#009668" TextColor="White" Clicked="Cuenta_Clicked_2"></Button>
+                    <Button Text="Mis Viajes" BackgroundColor="#009668" TextColor="White"  Clicked="Button_Clicked_1"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout Margin="15,30,5,5">
+                    <Label Text=" Detail Page"></Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

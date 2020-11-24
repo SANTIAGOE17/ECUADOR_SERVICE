@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.Micuentapage"
+            Title="Ecuador - Tourism Service">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+            <Grid RowSpacing="25">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+
+
+                <Label Text=""/>
+                <Label Text="DATOS PERSONALES" TextColor="#008B8B" FontSize="18"  WidthRequest="{OnPlatform UWP=300,Android=300,iOS=300}" FontAttributes="Bold" />
+                <Label Text=""/>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                <Label Text="Constraseña" TextColor="Black" FontAttributes="Bold" HorizontalOptions="FillAndExpand"  />
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="275" HeightRequest="50"
+                           Keyboard="Text" Placeholder="Cambie su nueva contraseña" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" IsPassword="True"
+                           HorizontalTextAlignment="Start" MaxLength="20"/>
+                </Frame>
+
+            </StackLayout>
+            
+                 
+            <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                <Label Text="Correo Electrónico" TextColor="Black" FontAttributes="Bold" HorizontalOptions="FillAndExpand"  />
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="275" HeightRequest="50"
+                           Placeholder="Cambie su correo electrónico" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Email"
+                           HorizontalTextAlignment="Start" MaxLength="35"/>
+                </Frame>
+            </StackLayout>
+            <Label Text=""/>
+            <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" Spacing="10">
+                <Frame Padding="0,4,0,4" HasShadow="True">
+                    <Button Text="Guardar Cambios" HeightRequest="35" WidthRequest="185" TextColor="White" BackgroundColor="#008B8B" FontSize="10"/>
+            </Frame>
+            </StackLayout>
+            
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text="OPCION DE CUENTA" TextColor="#008B8B" FontSize="18"  WidthRequest="{OnPlatform UWP=300,Android=300,iOS=300}" FontAttributes="Bold" />
+            
+
+            <StackLayout  Grid.Column="4" Grid.Row="0" HorizontalOptions="Center" Spacing="10">
+                <Label Text=""/>
+                <Label Text="Cerrar sesión en Ecuador-Tourims Service" TextColor="Black" FontAttributes="Bold" HorizontalOptions="FillAndExpand"  />
+                <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" Spacing="10">
+                    <Frame Padding="0,4,0,4" HasShadow="True">
+                        <Button Text="Salir" HeightRequest="35" WidthRequest="185" TextColor="White" BackgroundColor="#008B8B"  FontSize="10"/>
+                    </Frame>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

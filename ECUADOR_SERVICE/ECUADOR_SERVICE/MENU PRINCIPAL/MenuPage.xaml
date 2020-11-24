@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.MenuPage"
+              Title="Ecuador - Tourism Service" BackgroundColor="#2196f3">
+    <RelativeLayout>
+        <Image Source="https://previews.123rf.com/images/elisalocci/elisalocci1602/elisalocci160200300/54673778-mitad-del-mundo-en-la-l%C3%ADnea-del-ecuador-quito-ecuador.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"/>
+
+        <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+           
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+               
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Image Source="hoteles.png" HorizontalOptions="Center" Grid.Row="2" Grid.Column="1" HeightRequest="100" WidthRequest="100">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                  </Image.GestureRecognizers>
+            </Image>
+
+            <Image Source="avion3.jpg" HorizontalOptions="Center" Grid.Row="2" Grid.Column="2" HeightRequest="100" WidthRequest="100">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+       
+    </RelativeLayout>
+
+
+</ContentPage>

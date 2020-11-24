@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.LoginPage"
+             Title="Entrar" BackgroundColor="#eeeeee">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="1">
+
+            <Label Text="" />
+            <Label Text="" />
+            <Label Text="Ecuador - Tourism Service" TextColor="#333333" FontSize="15" FontAttributes="None" HorizontalOptions="Center" />
+            <Label Text="" />
+            <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                
+                <Grid RowSpacing="25">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                
+                    
+                
+                <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                    
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+
+                        <Entry x:Name="usuario"
+                           WidthRequest="275" HeightRequest="50"
+                           Placeholder="Usuario" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text"
+                           HorizontalTextAlignment="Start" MaxLength="20"
+                               />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Grid.Column="3" HorizontalOptions="Fill">
+
+                    
+                </StackLayout>
+                <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                    
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry x:Name="contra"
+                           WidthRequest="275" HeightRequest="50"
+                           Placeholder="Contraseña" IsPassword="True" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Email"
+                           HorizontalTextAlignment="Start" MaxLength="35"
+                               />
+                    </Frame>
+                </StackLayout>
+                  
+                 </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                <Label Text=""/>
+                <Button x:Name="IniciarSeccion"
+                        Text="INICIAR SESIÓN " HeightRequest="35" TextColor="White"  BackgroundColor="#008B8B" BorderRadius="20"  FontSize="12" FontAttributes="Bold"
+                        Clicked="IniciarSeccion_clicled"/>
+                <Label Text=""/>
+                <StackLayout Orientation="Horizontal">
+                    
+                <Label Text=" ¿Olvidates tu contraseña?"/>
+                <Label Text="recupérala aqui" VerticalOptions="EndAndExpand" FontAttributes="Bold"/>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

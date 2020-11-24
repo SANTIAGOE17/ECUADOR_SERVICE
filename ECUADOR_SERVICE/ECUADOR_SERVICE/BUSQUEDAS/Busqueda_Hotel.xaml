@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ECUADOR_SERVICE.Busqueda_Hotel"
+             Title="Ecuador - Tourism Service">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+            <Grid RowSpacing="25">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                <Label Text=""/>
+                <Label Text="BÚSQUEDA DE HOTELES" TextColor="#008B8B" FontSize="18"  WidthRequest="{OnPlatform UWP=300,Android=300,iOS=300}" FontAttributes="Bold" />
+                <Label Text=""/>
+            </StackLayout>
+            
+            <!--BUsqueda-->
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Entry WidthRequest="275" HeightRequest="50"
+                           Placeholder="Escriba la Ciudad" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text"
+                           HorizontalTextAlignment="Start" MaxLength="20"/>
+                </Frame>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

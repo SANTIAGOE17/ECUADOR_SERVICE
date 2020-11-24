@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ECUADOR_SERVICE.Busqueda_Avion"
+             Title="Ecuador - Tourism Service" >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <StackLayout Grid.Row="2" HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="Center">
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,3,0,0">
+                    <Picker Title="Origen" FontSize="15" WidthRequest="{OnPlatform UWP=146,Android=123,iOS=146}" HorizontalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Azuay</x:String>
+                                <x:String>Bolivar</x:String>
+                                <x:String>Cañar</x:String>
+                                <x:String>Chimborazo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+             
+
+                </Frame>
+                <Frame HasShadow="True" WidthRequest="134" HeightRequest="50" Padding="0,0,0,0" Margin="{OnPlatform UWP=10}">
+                    <Picker Title="Destino" FontSize="16" WidthRequest="{OnPlatform UWP=146,Android=123,iOS=146}" HorizontalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Cuenca</x:String>
+                                <x:String>Guaranda</x:String>
+                                <x:String>Azogues</x:String>
+                                <x:String>Riobamba</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

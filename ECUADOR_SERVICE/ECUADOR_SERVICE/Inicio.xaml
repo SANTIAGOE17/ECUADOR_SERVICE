@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Movil.Login"
+              Title=" INICIO DE LA APP" BackgroundColor="#e0f2f1">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Grid>
+                
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
+                        
+                    </Grid.RowDefinitions>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="1" Margin="0,0,0,20">
+        
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="1">
+                        <Label Text="BIENVENIDO" TextColor="#008B8B" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="" />
+                        <Label Text="Ecuador - Tourism Service" TextColor="#333333" FontSize="15" FontAttributes="None" HorizontalOptions="Center" />
+                        <Image Grid.Row="0" Source="app.jpg" WidthRequest="260" HeightRequest="210" />
+                        
+                    </StackLayout>
+                       
+                    <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" Spacing="10">
+                        <Label Text=""/>
+                        <Label Text=""/>
+                        <Frame Padding="0,4,0,4" HasShadow="True">
+                            <Button Text="Registrar" HeightRequest="35" WidthRequest="185" TextColor="#333333"  BackgroundColor="White" FontSize="10" Clicked="Registro_clicled"/>
+                        </Frame>
+                    </StackLayout>
+                    
+                    <StackLayout Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" Spacing="10">
+                        <Label Text=""/>
+                        <Frame Padding="0,4,0,4" HasShadow="True">
+                            <Button Text="¿Tienes Cuenta?" HeightRequest="35" WidthRequest="185" TextColor="#333333"  BackgroundColor="White" FontSize="10" Clicked="Login_clicled"/>
+                        </Frame>
+                        
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="4" HorizontalOptions="Center"  >
+                        <Label Text=""/>
+                        <Label Text=""/>
+                        <Label Text=""/>
+                        <Label Text=""/>
+                        <Label Text=""/>
+                        <Label Text=" 2020, SE. todos los derechos reservados" TextColor="#333333" FontSize="10" HorizontalOptions="Center"/>
+                    </StackLayout>  
+                        
+                                  
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
